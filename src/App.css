@@ -1,0 +1,156 @@
+body {
+  background-color: blueviolet;
+  font-family: "Cairo";
+  background-image: url(./hsoub-logo.png);
+  background-position: 95% 17px;
+  background-repeat: no-repeat;
+  background-size: 125px 40px;
+}
+
+
+#notes-list {
+  background-color: gray;
+  height:500px;
+  width: 25%;
+  margin-left: 75%;
+}
+
+
+#white-div  {
+  background-color: white;
+  width: 65%;
+  height: 500px;
+  margin: auto; 
+  margin-top: 100px;
+}
+
+
+#preview {
+  margin-top: -492px;
+  direction: rtl;
+  margin-right: 35%;
+}
+
+#preview-edit-btn {
+  background-color: #0cb30c;
+  color: white;
+  margin-top: 20px;
+  height: 39px;
+  width: 69px;
+  font-size: 20px;
+  border: 0px;
+  padding: 0%;
+  cursor: pointer;
+  font-family: "Cairo";
+
+
+}
+
+#preview-delete-btn {
+  background-color: #f15656;
+  color: white;
+  margin-top: 20px;
+  height: 39px;
+  width: 69px;
+  font-size: 20px;
+  border: 0px;
+  padding: 0%;
+  margin-right: 10px;
+  cursor: pointer;
+  font-family: "Cairo";
+
+
+}
+
+
+#notes-form {
+  margin-top: -492px;
+  direction: rtl;
+  margin-right: 35%;
+  
+}
+
+#notes-form-input1 {
+  display: block;
+  width: 85%;
+  height: 37px;
+  resize: none;
+  font-size: large;
+  padding-top: 10px;
+  font-family: "Cairo";
+
+}
+
+#notes-form-input2 {
+  display: block;
+  width: 85%;
+  margin-top: 20px;
+  height: 224px;
+  resize: none;
+  font-size: large;
+  padding-top: 10px;
+  font-family: "Cairo";
+}
+
+
+#notes-form-button {
+  background-color: #0cb30c;
+  color: white;
+  margin-top: 20px;
+  height: 39px;
+  width: 69px;
+  font-size: 20px;
+  border: 0px;
+  padding: 0%;
+  cursor: pointer;
+  font-family: "Cairo";
+
+
+}
+
+
+
+
+.note-item {
+  width: 100%; 
+  border-bottom: white solid 2px;
+  list-style: none;
+  text-align: center;
+  padding-top: 6%;
+  padding-bottom: 6%;
+  font-size: larger;
+  color: white
+}
+
+#header {
+  position: absolute;
+    top: 99px;
+    left: 32%;
+}
+
+#add-btn {
+  position: absolute;
+  right: 32.3%;
+  top: 60%;
+  width: 45px;
+  height: 45px;
+  line-height: 28px;
+  background-color: #c82333;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 30px;
+  border: 0;
+  cursor: pointer;
+  color: #fff;
+  outline: 0;
+  z-index: 10;
+  transform: translateY(-50%);
+}
+
+
+.active {
+  background-color: aqua;
+}
+
+
+
