@@ -22,7 +22,7 @@ function App() {
   function Preview ({note}) {
 
         const deleteHandler = () => {
-              let ind = notes.findIndex(item => item.id == note.id)
+              let ind = notes.findIndex(item => item.id === note.id)
               notes.splice(ind, 1)
               setNotes(notes);
               localStorage["notes"] = JSON.stringify(notes)
@@ -52,7 +52,7 @@ function App() {
           setComponent(<Preview note = {clickedNote}/>)
         }
 
-        let list = notes.map(note  => <li className= {"note-item" + (activeNote == note.id? " active": "")} onClick = { () => noteClickHandler(note)}> {note.title} </li>)
+        let list = notes.map(note  => <li className= {"note-item" + (activeNote === note.id? " active": "")} onClick = { () => noteClickHandler(note)}> {note.title} </li>)
         return (
           <div id = "notes-list">
             {list}
@@ -83,7 +83,7 @@ function App() {
                 return alert("you can't leave an empty field!")
               }
 
-              let ind = notes.findIndex(note => note.id == id);
+              let ind = notes.findIndex(note => note.id === id);
  
               notes[ind].title = title;
               notes[ind].content = content;
@@ -94,7 +94,7 @@ function App() {
         
         let handler, header;
 
-        if (buttonText == "حفظ") {
+        if (buttonText === "حفظ") {
           handler = saveHandler;
           header = "ملاحظة جديدة"
           setActiveNote()  //each occurence of this statement is the cause of the error in the terminal
